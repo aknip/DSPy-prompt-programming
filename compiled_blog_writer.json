@@ -1,0 +1,108 @@
+{
+  "question_to_blog_outline": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "What is multi-tenancy?",
+        "contexts": "But if you have a multi-tenancy case, all you need to do is select multi-tenancy for your class (or classes). You can keep using all your favorite features, including super-fast queries, cross-references, and replication. The only change? For every operation, specify the tenant key \u2013 a user-defined property in your schema. That\u2019s all that changes.Weaviate `v1.20` - coming in July 2023 - changes this once and for all: Native multi-tenancy support that scales to millions of tenants with 10s of thousands of active tenants per node. Yet scale is not the only point that makes the new multi-tenancy feature great; we put a lot of emphasis on compliance and a smooth UX. GDPR-compliant deletes with one command are just one of the many features. Let me walk you through what\u2019s coming in the next Weaviate release and show you why I\u2019m incredibly excited about this one. ## The need for multi-tenancy\nWe define multi-tenancy as the need to serve multiple distinct users or user groups from a single application.## No more workarounds: Native multi-tenancy support for the largest of cases\n\n![multi-tenancy](.\/img\/multi-tenancy-dark.png#gh-dark-mode-only)\n![multi-tenancy](.\/img\/multi-tenancy-light.png#gh-light-mode-only)\n\nLet me walk you through the best parts of the native multi-tenancy feature in Weaviate `v1.20` and even some of the plans that we have for upcoming releases. As you will see, Multi-Tenancy is not just an additional feature. It is rethinking from the ground up how your business, with its many customers, scales with Weaviate. ### Ease of use of your favorite Weaviate features\nWeaviate\u2019s new multi-tenancy mode is opt-in. If you don\u2019t require it, there are no changes for you.* **Cost-efficiency**: With usage peaking around tax season but most tenants inactive for many days of the month, ACME shouldn\u2019t have to pay for a large setup that is essentially idle most of the time. * **Diversity of tenants**: ACME has both large and small customers. Their setup needs to be able to handle tenants of vastly different sizes. While most tenants are small, a few tenants can make up a large bulk of the data. ## A time before multi-tenancy support\nBefore Weaviate `v1.20`, you had two options to model a multi-tenancy landscape.---\ntitle: Multi-Tenancy Vector Search with millions of tenants\nslug: multi-tenancy-vector-search\nauthors: [etienne]\ndate: 2023-06-15\nimage: .\/img\/hero.png\ntags: ['engineering', 'concepts']\ndescription: \"Learn about the new native multi-tenancy feature\"\n\n---\n\n![Multi-Tenancy ](.\/img\/hero.png)\n\n<!-- truncate -->\n\nLarge-scale setups were always a great reason to choose Weaviate. Last year we wrote about the first time [a Weaviate setup ran with a billion objects & vectors](\/blog\/sphere-dataset-in-weaviate). What was a mere experiment back then is a regular production case today. But earlier this year, we saw a shift in usage patterns: As we onboarded more and more large-scale and enterprise users, the definition of scale shifted from the number of vectors to the number of individual tenants that can run on a single setup. Previously, Weaviate offered multiple ways to tackle multi-tenancy, but none were intended for a massive scale.",
+        "rationale": "produce the blog outline. We first need to define what multi-tenancy is and why it is important. Then, we can discuss the new features of Weaviate's multi-tenancy support and how it improves upon previous versions. We can also highlight the benefits of using multi-tenancy, such as cost-efficiency and the ability to handle a diverse range of tenants. Finally, we can discuss the future plans for Weaviate's multi-tenancy feature.",
+        "blog_outline": "Definition of Multi-Tenancy, Importance of Multi-Tenancy, New Features in Weaviate's Multi-Tenancy Support, Benefits of Using Multi-Tenancy, Future Plans for Weaviate's Multi-Tenancy Feature."
+      },
+      {
+        "question": "What are cross encoders?"
+      },
+      {
+        "question": "How does asynchronous indexing work in Weaviate?"
+      },
+      {
+        "question": "What is product quantization?"
+      }
+    ],
+    "signature_instructions": "\n    Your task is to write a blog post that will help answer the given question. \n    Please use the contexts to evaluate the structure of the blog post.\n    ",
+    "signature_prefix": "Blog Outline:",
+    "extended_signature_instructions": "\n    Your task is to write a blog post that will help answer the given question. \n    Please use the contexts to evaluate the structure of the blog post.\n    ",
+    "extended_signature_prefix": "Blog Outline:"
+  },
+  "topic_to_paragraph": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "topic": "Definition of Multi-Tenancy",
+        "contexts": "But if you have a multi-tenancy case, all you need to do is select multi-tenancy for your class (or classes). You can keep using all your favorite features, including super-fast queries, cross-references, and replication. The only change? For every operation, specify the tenant key \u2013 a user-defined property in your schema. That\u2019s all that changes.Weaviate `v1.20` - coming in July 2023 - changes this once and for all: Native multi-tenancy support that scales to millions of tenants with 10s of thousands of active tenants per node. Yet scale is not the only point that makes the new multi-tenancy feature great; we put a lot of emphasis on compliance and a smooth UX. GDPR-compliant deletes with one command are just one of the many features. Let me walk you through what\u2019s coming in the next Weaviate release and show you why I\u2019m incredibly excited about this one. ## The need for multi-tenancy\nWe define multi-tenancy as the need to serve multiple distinct users or user groups from a single application.## No more workarounds: Native multi-tenancy support for the largest of cases\n\n![multi-tenancy](.\/img\/multi-tenancy-dark.png#gh-dark-mode-only)\n![multi-tenancy](.\/img\/multi-tenancy-light.png#gh-light-mode-only)\n\nLet me walk you through the best parts of the native multi-tenancy feature in Weaviate `v1.20` and even some of the plans that we have for upcoming releases. As you will see, Multi-Tenancy is not just an additional feature. It is rethinking from the ground up how your business, with its many customers, scales with Weaviate. ### Ease of use of your favorite Weaviate features\nWeaviate\u2019s new multi-tenancy mode is opt-in. If you don\u2019t require it, there are no changes for you.* **Cost-efficiency**: With usage peaking around tax season but most tenants inactive for many days of the month, ACME shouldn\u2019t have to pay for a large setup that is essentially idle most of the time. * **Diversity of tenants**: ACME has both large and small customers. Their setup needs to be able to handle tenants of vastly different sizes. While most tenants are small, a few tenants can make up a large bulk of the data. ## A time before multi-tenancy support\nBefore Weaviate `v1.20`, you had two options to model a multi-tenancy landscape.---\ntitle: Multi-Tenancy Vector Search with millions of tenants\nslug: multi-tenancy-vector-search\nauthors: [etienne]\ndate: 2023-06-15\nimage: .\/img\/hero.png\ntags: ['engineering', 'concepts']\ndescription: \"Learn about the new native multi-tenancy feature\"\n\n---\n\n![Multi-Tenancy ](.\/img\/hero.png)\n\n<!-- truncate -->\n\nLarge-scale setups were always a great reason to choose Weaviate. Last year we wrote about the first time [a Weaviate setup ran with a billion objects & vectors](\/blog\/sphere-dataset-in-weaviate). What was a mere experiment back then is a regular production case today. But earlier this year, we saw a shift in usage patterns: As we onboarded more and more large-scale and enterprise users, the definition of scale shifted from the number of vectors to the number of individual tenants that can run on a single setup. Previously, Weaviate offered multiple ways to tackle multi-tenancy, but none were intended for a massive scale.",
+        "rationale": "produce the paragraph. We need to define what multi-tenancy is, explain its importance, and how it is implemented in the context of Weaviate. We can start by defining multi-tenancy as the need to serve multiple distinct users or user groups from a single application. Then, we can explain how it is implemented in Weaviate, where users can select multi-tenancy for their classes and specify a tenant key for every operation. We can also mention that Weaviate's multi-tenancy feature is opt-in and is designed to be cost-efficient and capable of handling tenants of vastly different sizes. Lastly, we can highlight that Weaviate's upcoming release will offer native multi-tenancy support that scales to millions of tenants.",
+        "paragraph": "Multi-tenancy is defined as the need to serve multiple distinct users or user groups from a single application. In the context of Weaviate, a user can select multi-tenancy for their classes and specify a tenant key for every operation. This feature is opt-in, meaning if you don't require it, there are no changes for you. It is designed to be cost-efficient and capable of handling tenants of vastly different sizes. The upcoming release of Weaviate, version 1.20, will offer native multi-tenancy support that scales to millions of tenants, with tens of thousands of active tenants per node. This new feature is not just an additional feature, but a rethinking of how businesses with many customers can scale with Weaviate."
+      },
+      {
+        "question": "How does asynchronous indexing work in Weaviate?"
+      },
+      {
+        "question": "What is product quantization?"
+      },
+      {
+        "question": "What are cross encoders?"
+      }
+    ],
+    "signature_instructions": "\n    Your task is to write a paragraph that explains a topic based on the retrieved contexts.\n    ",
+    "signature_prefix": "Paragraph:",
+    "extended_signature_instructions": "\n    Your task is to write a paragraph that explains a topic based on the retrieved contexts.\n    ",
+    "extended_signature_prefix": "Paragraph:"
+  },
+  "proof_reader": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "blog_post": "Multi-tenancy is defined as the need to serve multiple distinct users or user groups from a single application. In the context of Weaviate, a user can select multi-tenancy for their classes and specify a tenant key for every operation. This feature is opt-in, meaning if you don't require it, there are no changes for you. It is designed to be cost-efficient and capable of handling tenants of vastly different sizes. The upcoming release of Weaviate, version 1.20, will offer native multi-tenancy support that scales to millions of tenants, with tens of thousands of active tenants per node. This new feature is not just an additional feature, but a rethinking of how businesses with many customers can scale with Weaviate.\n \nMulti-tenancy is a crucial feature in modern software applications due to its numerous benefits. It allows serving multiple distinct users or user groups from a single application, which enhances efficiency and resource utilization. One of the key advantages of multi-tenancy is cost-efficiency, as it allows for optimal resource usage, especially in scenarios where usage peaks at certain times but remains idle for the rest of the time. It also supports a diverse range of tenants, from small to large, catering to their varying needs effectively. Multi-tenancy also ensures speed, as narrowing a request down to a single tenant does not require much computational effort. It facilitates easy onboarding and offboarding of tenants without affecting the performance of the system for other tenants. Moreover, it sets resource boundaries to prevent interference between different tenants' operations. Therefore, multi-tenancy is not just an additional feature, but a fundamental rethinking of how a business scales with its customers.\n \nThe upcoming Weaviate v1.20 release, set for July 2023, introduces a game-changing feature: native multi-tenancy support. Multi-tenancy, defined as the ability to serve multiple distinct users or user groups from a single application, is a crucial aspect of modern software architecture. The new multi-tenancy feature in Weaviate is designed to scale to millions of tenants, with the capacity to support over 50,000 active tenants per node. This scalability is complemented by an emphasis on compliance, with features such as GDPR-compliant deletes, and a smooth user experience. If the need arises to onboard more tenants, users can simply add a new node to their existing cluster. This is a significant upgrade from previous versions of Weaviate, which required workarounds to model a multi-tenancy landscape. With the new native multi-tenancy support, Weaviate is rethinking how businesses can scale with their many customers.\n \nMulti-tenancy offers numerous benefits for businesses, particularly in terms of scalability and efficiency. One of the primary advantages is its ease of use; businesses can simply select multi-tenancy for their classes and continue using their favorite features such as super-fast queries, cross-references, and replication. Multi-tenancy also provides cost-efficiency, especially for businesses with usage peaks at certain times but remain inactive for many days of the month. This feature allows for the diversity of tenants, accommodating both large and small customers. Speed is another benefit, as narrowing a request down to a single tenant does not require much work, even with millions of tenants. Onboarding and offboarding are also made easy with multi-tenancy, ensuring that adding or removing a business does not impose a significant computational load. Furthermore, multi-tenancy ensures resource boundaries, preventing the activities of one tenant from interfering with others. In the latest version of Weaviate, multi-tenancy is an opt-in feature, allowing businesses to serve multiple distinct users or user groups from a single application.\n \nWeaviate v1.20, set to be released in July 2023, is introducing a native multi-tenancy feature that can serve multiple distinct users or user groups from a single application. This feature is designed to scale to millions of tenants, with the capacity to support tens of thousands of active tenants per node. In addition to scalability, the new multi-tenancy feature also emphasizes compliance and user experience, offering functionalities such as GDPR-compliant deletes. The multi-tenancy feature is opt-in, so users who don't require it won't be affected. Designed to scale with your business, it can support over 50,000 active tenants per node. If you run out of space but want to onboard more tenants, you can simply add a new node to your existing cluster. The Weaviate team is excited about this upcoming release and welcomes feedback from users.\n \n",
+        "rationale": "produce a more concise and coherent blog post. The original post is repetitive and contains unnecessary details. It also lacks a clear structure and flow, making it difficult for readers to follow. The proofread version will aim to eliminate repetition, provide a clear structure, and ensure a smooth flow of ideas.",
+        "proofread_blog_post": "Multi-tenancy, defined as the ability to serve multiple distinct users or user groups from a single application, is a crucial feature in modern software applications. It enhances efficiency, optimizes resource utilization, and is cost-efficient. In the context of Weaviate, users can opt for multi-tenancy for their classes and specify a tenant key for each operation. This feature is optional, so if you don't need it, there are no changes for you. \n\nThe upcoming release of Weaviate, version 1.20, set for July 2023, introduces native multi-tenancy support. This game-changing feature is designed to scale to millions of tenants, with the capacity to support over 50,000 active tenants per node. It's not just an additional feature, but a fundamental rethinking of how businesses can scale with their customers. \n\nMulti-tenancy offers numerous benefits. It allows for optimal resource usage, especially in scenarios where usage peaks at certain times but remains idle for the rest of the time. It supports a diverse range of tenants, from small to large, catering to their varying needs effectively. It also ensures speed, as narrowing a request down to a single tenant does not require much computational effort. \n\nOnboarding and offboarding of tenants are made easy with multi-tenancy, without affecting the performance of the system for other tenants. It also sets resource boundaries to prevent interference between different tenants' operations. \n\nThe new multi-tenancy feature in Weaviate also emphasizes compliance, with features such as GDPR-compliant deletes, and a smooth user experience. If the need arises to onboard more tenants, users can simply add a new node to their existing cluster. \n\nIn conclusion, the native multi-tenancy support in Weaviate v1.20 is a significant upgrade from previous versions, rethinking how businesses can scale with their many customers. The Weaviate team is excited about this upcoming release and welcomes feedback from users."
+      },
+      {
+        "question": "What is product quantization?"
+      },
+      {
+        "question": "What are cross encoders?"
+      },
+      {
+        "question": "How does asynchronous indexing work in Weaviate?"
+      }
+    ],
+    "signature_instructions": "\n    Proofread a blog post and output a more well written version of the original post.\n    ",
+    "signature_prefix": "Proofread Blog Post:",
+    "extended_signature_instructions": "\n    Proofread a blog post and output a more well written version of the original post.\n    ",
+    "extended_signature_prefix": "Proofread Blog Post:"
+  },
+  "title_generator": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "blog_outline": "Definition of Multi-Tenancy, Importance of Multi-Tenancy, New Features in Weaviate's Multi-Tenancy Support, Benefits of Using Multi-Tenancy, Future Plans for Weaviate's Multi-Tenancy Feature.",
+        "rationale": "produce the title. We need to highlight the main topic which is Multi-Tenancy, specifically in relation to Weaviate. The blog also covers the benefits, new features, and future plans of this feature. Therefore, the title should reflect these aspects.",
+        "title": "\"Exploring Multi-Tenancy: New Features, Benefits, and Future Plans in Weaviate\""
+      },
+      {
+        "question": "How does asynchronous indexing work in Weaviate?"
+      },
+      {
+        "question": "What is product quantization?"
+      },
+      {
+        "question": "What are cross encoders?"
+      }
+    ],
+    "signature_instructions": "\n    Write a title for a blog post given a description of the topics the blog covers as input.\n    ",
+    "signature_prefix": "Title:",
+    "extended_signature_instructions": "\n    Write a title for a blog post given a description of the topics the blog covers as input.\n    ",
+    "extended_signature_prefix": "Title:"
+  }
+}

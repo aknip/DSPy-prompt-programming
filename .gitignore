@@ -12,7 +12,9 @@ screenshots/
 local_cache/
 transformerQA-finetuning/
 tests/media/
+weaviate_data/
 venv
+.env
 .idea
 .nicegui/
 *.sqlite*
