@@ -9,6 +9,8 @@ settings.json
 *.log
 screenshots/
 .ipynb_checkpoints/
+local_cache/
+transformerQA-finetuning/
 tests/media/
 venv
 .idea
